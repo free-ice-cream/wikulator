@@ -1,0 +1,39 @@
+
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <title>Title of the document</title>
+  <script >
+    function getSelectionText() {
+        var text = "";
+        if (window.getSelection) {
+            text = window.getSelection().toString();
+        } else if (document.selection && document.selection.type != "Control") {
+            text = document.selection.createRange().text;
+        }
+        return text;
+    }
+
+
+
+  </script>
+  </head>
+
+  <body>
+boo
+<button type="button" name="button" label="load" onClick='document.getElementById("ifr").src="http://freeicecream.co.uk";'>
+
+</button>
+
+    <iframe id='ifr' frameborder="0" scrolling="no" width="550" height="400">
+      hoo
+
+
+
+
+      hey
+
+  </body>
+
+  </html>
